@@ -1,17 +1,25 @@
-import reactLogo from "./assets/react.svg";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Modale from "./pages/Modale";
+import Onglets from "./pages/Onglets";
+import NavResponsive from "./pages/NavResponsive";
+import Validation from "./pages/Validation";
+import Navbar from "./components/Navbar";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1>Mettre un site en ligne</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-        deserunt cum debitis dolor quidem! Optio nisi consequatur iusto,
-        quisquam dicta numquam labore ducimus sequi modi facilis cumque quas
-        commodi dolore tenetur. In commodi unde ex.
-      </p>
-      <img src={reactLogo} alt="React" width={200} />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/react-deploy-2/" element={<Home />} />
+          <Route path="/react-deploy-2/modale" element={<Modale />} />
+          <Route path="/react-deploy-2/onglets" element={<Onglets />} />
+          <Route path="/react-deploy-2/navbar" element={<NavResponsive />} />
+          <Route path="/react-deploy-2/validation" element={<Validation />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
