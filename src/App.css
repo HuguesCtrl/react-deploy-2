@@ -3,6 +3,7 @@ body {
   background-color: #e99999;
   color: aliceblue;
   margin: 0;
+  text-align: center;
 }
 
 .menu {
@@ -31,6 +32,6 @@ body {
   color: #e99999 !important;
 }
 
-.content {
+.padding {
   padding: 20px;
 }

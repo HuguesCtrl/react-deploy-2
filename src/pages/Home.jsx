@@ -2,7 +2,7 @@ import reactLogo from "../assets/react.svg";
 
 function Home() {
   return (
-    <div className="content">
+    <div className="padding">
       <h1>Mettre un site en ligne</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
